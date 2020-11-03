@@ -6,7 +6,7 @@ Authors@R:
            family = "Meah",
            role = c("aut", "cre"),
            email = "smeah21@amherst.edu")
-Description: My dataset came from https://github.com/themarshallproject/city-crime/blob/master/data/ucr_crime_1975_2015.csv. It contains data from 1975-2015 on the occurrences of violent crimes in 68 different police districts, along with the populations of these jurisdictions in their corresponding years. These types of violent crimes include homicide, rape, robbery and assault. See https://github.com/themarshallproject/city-crime/blob/master/README.md for the authors’ description of the data.
+Description: The dataset came from https://github.com/themarshallproject/city-crime/blob/master/data/ucr_crime_1975_2015.csv. It contains data from 1975-2015 on the occurrences of violent crimes in 68 different police districts, along with the populations of these jurisdictions in their corresponding years. These types of violent crimes include homicide, rape, robbery and assault. See https://github.com/themarshallproject/city-crime/blob/master/README.md for the authors’ description of the data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
