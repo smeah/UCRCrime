@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+![R-CMD-check](https://github.com/smeah/UCRCrime/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 The goal of UCRCrime is to let people perform their own analyses on

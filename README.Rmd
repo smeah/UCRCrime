@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # UCRCrime
 
 <!-- badges: start -->
+![R-CMD-check](https://github.com/smeah/UCRCrime/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 The goal of UCRCrime is to let people perform their own analyses on violent crime data in 68 different US police jurisdictions between 1975 and 2015. Most of the data originally came from the FBI Uniform Crime Reporting Program, and was collected and released by the [Marshall Project](https://www.themarshallproject.org/).  See [UCRCrime.Rd](https://github.com/smeah/UCRCrime/blob/master/man/UCRCrime.Rd) for a complete codebook including descriptions of every variable and the source of the data.
