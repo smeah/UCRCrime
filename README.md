@@ -9,7 +9,12 @@
 
 The goal of UCRCrime is to let people perform their own analyses on
 violent crime data in 68 different US police jurisdictions between 1975
-and 2015. See
+and 2015. Most of the data originally came from the FBI Uniform Crime
+Reporting Program, and was collected and released by the [Marshall
+Project](https://www.themarshallproject.org/). See
+[UCRCrime.Rd](https://github.com/smeah/UCRCrime/blob/master/man/UCRCrime.Rd)
+for a complete codebook including descriptions of every variable and the
+source of the data.
 
 ## Installation
 
@@ -34,7 +39,7 @@ SOLUTION:
 ggplot(filter(UCRCrime, department == "Detroit"),
        aes(x = year, y = violent_crime_100k, fill = violent_crime_100k)) +
   geom_col() +
-  scale_fill_gradientn(colours = grDevices::heat.colors(10)) +
+  scale_fill_gradientn(colours = rev(grDevices::heat.colors(10))) +
   ggtitle("Violent Crime in Detroit from 1975-2015") +
   labs(x = "Year", 
        y = "Violent Crimes per 100k",
@@ -58,7 +63,7 @@ SOLUTION:
 ``` r
 ggplot(UCRCrime,
   aes(x = assaults_100k, y = homicides_100k)) +
-  geom_point() + 
+  geom_point(alpha = .25) + 
   geom_smooth() + 
   ggtitle("Homicides vs. Assaults per 100k persons") +
   labs(x = "Assaults per 100k", y = "Homicides per 100k")
